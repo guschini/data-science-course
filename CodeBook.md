@@ -2,7 +2,7 @@
 
 The raw data obtained from  
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
-The zip archive gets unarchived in `UCI HAR Dataset` folder  
+The zip archive gets unarchived in `in/UCI HAR Dataset` folder  
 `UCI HAR Dataset\test\*.txt` 3 files joined side by side into a data frame  
 `UCI HAR Dataset\train\*.txt` 3 files joined side by side into a data frame  
 Columns names for `X_*.txt` are taken from `UCI HAR Dataset\features.txt`  

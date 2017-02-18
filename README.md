@@ -7,6 +7,7 @@ Set the working directory to the cloned `/datasciencecoursera` folder
 and run  
 `source("run_analysis.R"); run_analysis()`  
 find results in folder `/datasciencecoursera/out`  
+
 | result file          |                      description                                                              |
 |----------------------|-----------------------------------------------------------------------------------------------|
 | `tidy_data.txt`      | test and train data merged for mean and standard deviation values                             |
