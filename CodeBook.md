@@ -1,26 +1,26 @@
 ## Code Book
 
-The raw data obtained from
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-The zip archive gets unarchived in `UCI HAR Dataset` folder
-`UCI HAR Dataset\test\*.txt` 3 files joined side by side into a data frame
-`UCI HAR Dataset\train\*.txt` 3 files joined side by side into a data frame
-Columns names for `X_*.txt` are taken from `UCI HAR Dataset\features.txt`
-`'activity_code'` name is used for the only column of `y_*.txt`
-`'subject'` name is used for the only column of `subject.txt`
-Then one data frame gets appended to the other
-`'activity_code'`, `'subject'`, and columns having `'mean('` and `'std('` in their names are filtered for a new data frame
-The activity code-to-label map is read from `UCI HAR Dataset\activity_labels.txt`
-A new column `'activity'` added to the new data frame based on the map
-The columns of the data frame are renamed to remove `'()'`, brought to lower case, and `'-'` are introduced as separators between words/abbreviations
-The resulted data frame gets written in `out/tidy_data.txt`
-This data frame gets aggregated using `mean()` function grouping by `'activity'`, `'subject'`
-The resulted data frame gets written in `out/tidy_data_mean.txt`
-
-All the actions are performed by a script `run_analysis.R` provided in this folder
-Read `README.md` file on how to run it
-
-# Description of the variables
+The raw data obtained from  
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
+The zip archive gets unarchived in `UCI HAR Dataset` folder  
+`UCI HAR Dataset\test\*.txt` 3 files joined side by side into a data frame  
+`UCI HAR Dataset\train\*.txt` 3 files joined side by side into a data frame  
+Columns names for `X_*.txt` are taken from `UCI HAR Dataset\features.txt`  
+`'activity_code'` name is used for the only column of `y_*.txt`  
+`'subject'` name is used for the only column of `subject.txt`  
+Then one data frame gets appended to the other  
+`'activity_code'`, `'subject'`, and columns having `'mean('` and `'std('` in their names are filtered for a new data frame  
+The activity code-to-label map is read from `UCI HAR Dataset\activity_labels.txt`  
+A new column `'activity'` added to the new data frame based on the map  
+The columns of the data frame are renamed to remove `'()'`, brought to lower case, and `'-'` are introduced as separators between words/abbreviations  
+The resulted data frame gets written in `out/tidy_data.txt`  
+This data frame gets aggregated using `mean()` function grouping by `'activity'`, `'subject'`  
+The resulted data frame gets written in `out/tidy_data_mean.txt`  
+  
+All the actions are performed by a script `run_analysis.R` *provided in this folder*  
+Read `README.md` file on how to run it  
+  
+### Description of the variables
 | variable                       | description                                                                                                          |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | activity                       | activity a person performed                                                                                          |
