@@ -19,6 +19,9 @@ The resulted data frame gets written in `out/tidy_data_mean.txt`
   
 All the actions are performed by a script `run_analysis.R` *provided in this folder*  
 Read `README.md` file on how to run it  
+
+`t-` - time domain signals  
+`f-` - frequency domain signals  
   
 ### Description of the variables
 | variable                       | description                                                                                                          |
